@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*--------------
+Toolbar
+----------------*/
+.toolbar{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #222d32;
+    color: #fff;
+}
+    .hi-a {
+        padding: 0 16px;
+        font-size: 16px;
+        font-family: 'Oswald', sans-serif;
+    }
+    .spacer{
+        flex: 1;
+    }
+
+    /* Icon */
+    #option .icon{
+        font-size: 17px;
+        padding: 5px;
+        margin: 5px;
+    }
+        .icon:hover{
+            background-color: rgba(224, 244, 224, .2);
+        }
+        .icon:nth-child(1):hover{
+            color: #ff9933;
+        }
+        .icon:nth-child(2){
+            color: #13cf13;
+        }
+            .icon:nth-child(2):hover{
+                color: #fa4b1b;
+            }
+
+/* Perfil */
+.div-perfil{
+    height: 100%;
+}
+    #perfil{
+        color: #ffffff;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 16px;
+        cursor: pointer;
+    }
+        #perfil:hover{
+            background-color: #2a383e;
+        }
+            .name-user-login .name-user{
+                font-family: 'Oswald', sans-serif;
+            }
+                /* Img */
+                .img-perfil{
+                    border-radius: 100%;
+                    margin: 0 16px;
+                    width: 30px;
+                    height: 30px;
+                }
+
+/* Sección*/
+.borde{
+    border: solid 0.5px #e4e4e4;
+    margin: 15px;
+}
+    .img-area{
+        padding: 5px;
+        max-width: 300px;
+        max-height: 200px;
+        display: block;
+        margin: auto;
+        clip-path: inset(0 0 1% 0);
+    }
+        .perfil-area{
+            height: 200px;
+        }
+        .img_area{
+            width: 100%;
+        }
+.datos_area{
+    background-color: #f1f1f1;
+}
+    .txt-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+        .name-area{
+           font-size: 18px;
+           font-weight: bold;
+           font-family: 'Oswald', sans-serif;
+        }
+
+    .separador{
+        width: 95%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .name_p-imagen{
+        height: 100%;
+        display: flex;
+        align-content: center;
+        padding: 10px;
+    }
+    .btn-primary, .btn-primary:active, .btn-primary:visited{
+        background-color: #222D32 !important;
+        border-color: #222D32 !important;
+    }
+    .btn-primary:hover{
+        background-color: #32424a !important;
+    }
+
+    #perfil_a{
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(112, 112, 112, .3);
+    }
+    .name_persona{
+        margin-left: 5px;
+        font-family: 'Oswald', sans-serif;
+    }
+
+/*Cambiando medidas*/
+@media screen and (max-width:485px){
+    .hi-b{
+        display: none;
+    }
+    .name-user{
+        display: none;
+    }
+}
+@media screen and (max-width:300px){
+    .hi-a{
+        display: none;
+    }
+}
